@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(176, 228, 252);
+}
+
+.login {
+  &__container {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 40px 20px;
+  }
+  &__textfield {
+    margin-bottom: 10px;
+  }
+
+  &__submit {
+    margin-top: 50px;
+  }
+}
+.toppage {
+  &__container {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    padding: 40px 20px;
+  }
+  &__message {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  &__navigation {
+    & ul {
+      margin: 0;
+      & li {
+        margin: 5px 40px 5px 0;
+        padding: 0;
+        text-align: center;
+        list-style: none;
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+h1 {
+  border-bottom: solid 2px #111;
+}

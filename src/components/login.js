@@ -21,7 +21,6 @@ class Login extends Component {
       type,
       meta: { touched, error },
     } = field;
-    console.log(touched);
     return touched && error ? (
       <TextField
         error
@@ -44,7 +43,7 @@ class Login extends Component {
       localStorage.setItem("token", this.props.login.token);
       this.props.history.push("/top");
     } else {
-      console.log("Failure Login.");
+      console.log("Failure Login...");
     }
   }
 
@@ -57,7 +56,7 @@ class Login extends Component {
         <form onSubmit={handleSubmit(this.onSubmit)}>
           <div className="login__textfield">
             <Field
-              label="userId"
+              label="USERID"
               name="userId"
               type="text"
               component={this.renderField}
@@ -65,7 +64,7 @@ class Login extends Component {
           </div>
           <div className="login__textfield">
             <Field
-              label="passWord"
+              label="PASSWORD"
               name="passWord"
               type="password"
               component={this.renderField}
